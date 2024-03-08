@@ -20,6 +20,17 @@ We’ll also cover how to use the Where Metadata filter to limit the relevance o
 ##### YouTube Tutorial:
 <a href='https://youtu.be/u_N1t0CBuqA'><img src='https://img.youtube.com/vi/u_N1t0CBuqA/0.jpg' width='400' alt='Getting Started with ChromaDB Multimodal'/></a>
 
+## Maximize Embedding Vectorization Speed in ChromaDB with NVidia CUDA GPU and Python Multiprocessing
+How to vectorize embeddings into ChromaDB as fast as possible leveraging the power of your NVidia CUDA GPU along with Python's Multiprocessing capability. We'll use Multiprocessing to 1) launch a Python producer process on the CPU to handle the workload of reading and transforming the data and 2) launch a consumer process to vectorize the data into embeddings using the GPU.
+
+##### Code Reference:
+* [chroma_fast_vectorize.py](https://github.com/johnnycode8/chromadb_quickstart/blob/main/chroma_fast_vectorize.py) 
+* [chroma_fast_vectorize_qa.ipynb](https://github.com/johnnycode8/chromadb_quickstart/blob/main/chroma_fast_vectorize_qa.ipynb) 
+
+##### YouTube Tutorial:
+<a href='https://youtu.be/7FvdwwvqrD4'><img src='https://img.youtube.com/vi/7FvdwwvqrD4/0.jpg' width='400' alt='Maximize Vectorization Speed ChromaDB'/></a>
+
+
 ## Use Gemini Pro (FREE) to Create Vector Embeddings for ChromaDB
 Improve your semantic searches with vector embeddings from one of the best LLMs out there. We'll swap the ChromaDB out-of-the-box local model with the Gemini Pro embedding model with just a few code changes.
 
@@ -28,3 +39,10 @@ Improve your semantic searches with vector embeddings from one of the best LLMs 
 
 ##### YouTube Tutorial:
 <a href='https://youtu.be/a_vuUufkCy4'><img src='https://img.youtube.com/vi/a_vuUufkCy4/0.jpg' width='400' alt='Getting Started with ChromaDB Multimodal'/></a>
+
+## How to Work With and Persist ChromaDB Vector Database in Google Colab
+Tutorial shows how to persist a ChromaDB database in Google Colab by creating the database in your Google Drive. This is part of my Recipe Database tutorial series at [RecipeDB Repo](https://github.com/johnnycode8/recipedb).
+
+##### Video Tutorial:
+<a href='https://youtu.be/ziiLezCnXYU'><img src='https://img.youtube.com/vi/ziiLezCnXYU/0.jpg' width='400' alt='Get Started with ChromaDB on Colab'/></a>
+
