@@ -1,4 +1,4 @@
-This repo contains companion video explanation and code walkthrough from my YouTube channel [@johnnycode](https://www.youtube.com/@johnnycode). If the code and video helped you, please consider:  
+This repo contains companion video explanation and code walkthrough from my YouTube channel [@johnnycode](https://www.youtube.com/@johnnycode). If the code and video helped you, please consider:
 <a href='https://www.buymeacoffee.com/johnnycode'><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
 ## Getting Started with ChromaDB - Text Semantic Search
@@ -11,8 +11,8 @@ ChromaDB is the Vector Database with the lowest learning curve. Start testing ou
 <a href='https://youtu.be/QSW2L8dkaZk'><img src='https://img.youtube.com/vi/QSW2L8dkaZk/0.jpg' width='400' alt='Getting Started with ChromaDB'/></a>
 
 ## Getting Started with ChromaDB - Multimodal (Image) Semantic Search
-How to start using ChromaDB Multimodal (images) semantic searches on a vector database. We’ll load some images and query for objects in the images. 
-We’ll also cover how to use the Where Metadata filter to limit the relevance of the search results. 
+How to start using ChromaDB Multimodal (images) semantic searches on a vector database. We’ll load some images and query for objects in the images.
+We’ll also cover how to use the Where Metadata filter to limit the relevance of the search results.
 
 ##### Code Reference:
 * [chroma_multimodal.ipynb](https://github.com/johnnycode8/chromadb_quickstart/blob/main/chroma_multimodal.ipynb)
@@ -24,11 +24,27 @@ We’ll also cover how to use the Where Metadata filter to limit the relevance o
 How to vectorize embeddings into ChromaDB as fast as possible leveraging the power of your NVidia CUDA GPU along with Python's Multiprocessing capability. We'll use Multiprocessing to 1) launch a Python producer process on the CPU to handle the workload of reading and transforming the data and 2) launch a consumer process to vectorize the data into embeddings using the GPU.
 
 ##### Code Reference:
-* [chroma_fast_vectorize.py](https://github.com/johnnycode8/chromadb_quickstart/blob/main/chroma_fast_vectorize.py) 
-* [chroma_fast_vectorize_qa.ipynb](https://github.com/johnnycode8/chromadb_quickstart/blob/main/chroma_fast_vectorize_qa.ipynb) 
+* [chroma_fast_vectorize.py](https://github.com/johnnycode8/chromadb_quickstart/blob/main/chroma_fast_vectorize.py)
+* [chroma_fast_vectorize_qa.ipynb](https://github.com/johnnycode8/chromadb_quickstart/blob/main/chroma_fast_vectorize_qa.ipynb)
 
 ##### YouTube Tutorial:
 <a href='https://youtu.be/7FvdwwvqrD4'><img src='https://img.youtube.com/vi/7FvdwwvqrD4/0.jpg' width='400' alt='Maximize Vectorization Speed ChromaDB'/></a>
+
+
+
+
+## Set Up ChromaDB with Docker & Enable Role-Based Token Authentication
+* First, we'll get ChromaDB up and running quickly in a Docker container. ChromaDB can be accessed via a HTTP client without authentication.
+* Then, add token-based authentication, but this will only work for 1 token i.e. 1 admin user.
+* Finally, add role-based token authentication to allow for multiple users with different types of permissions to connect to ChromaDB.
+* I'll also show how to resolve the "ModuleNotFoundError: No module named hypothesis" error in version 0.5.2 of ChromaDB by building a new image with 'hypothesis' installed. This technique can also be used to install your packages into the container.
+
+##### Code Reference:
+* See chroma_docker directory
+
+##### YouTube Tutorial:
+<a href='https://youtu.be/jx94oZRPvY4'><img src='https://img.youtube.com/vi/jx94oZRPvY4/0.jpg' width='400' alt='ChromaDB with Docker and Token Authentication'/></a>
+
 
 
 ## Use Gemini Pro (FREE) to Create Vector Embeddings for ChromaDB

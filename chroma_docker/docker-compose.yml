@@ -1,0 +1,13 @@
+services:
+  vectordb:
+    # image: ghcr.io/chroma-core/chroma:0.5.2  # Image tag: https://github.com/chroma-core/chroma/releases
+    # image: ghcr.io/chroma-core/chroma:0.5.3
+    build: ./
+    container_name: chroma_docker
+    ports:
+      - 8800:8000
+    env_file:
+      - ./.env
+    volumes:
+      - ./my_db:/chroma/my_db
+      - ./my_config:/chroma/my_config
