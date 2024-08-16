@@ -1,2 +1,4 @@
 my_vectordb
 chroma_docker/my_db
+.env
+temp*.txt
